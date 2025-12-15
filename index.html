@@ -5,30 +5,34 @@
 <title>Neutral Calendar</title>
 
 <style>
-  body {
+  /* Make the whole page transparent */
+  html, body {
     margin: 0;
-    background: #f4efe9;
+    padding: 0;
+    background: transparent;
     font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
   }
 
+  /* Calendar container */
   .calendar {
     width: 340px;
-    background: #ffffff;
-    border-radius: 10px;
-    padding: 16px;
+    background: transparent; /* IMPORTANT */
+    padding: 16px 0;
   }
 
   .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #f4efe9;
+    background: rgba(0,0,0,0.04);
     padding: 10px 12px;
-    border-radius: 8px;
+    border-radius: 12px;
     font-weight: 600;
   }
 
@@ -41,7 +45,6 @@
   }
 
   .month-year {
-    text-align: center;
     font-size: 15px;
     font-weight: 600;
   }
@@ -56,22 +59,22 @@
   .weekdays div {
     font-size: 12px;
     font-weight: 600;
-    color: #333;
+    color: #444;
   }
 
   .days div {
     padding: 8px 0;
     font-size: 14px;
-    border-radius: 6px;
+    border-radius: 8px;
   }
 
   .today {
-    background: #f4efe9;
+    background: rgba(0,0,0,0.06);
     font-weight: 700;
   }
 
   .muted {
-    color: #c7c7c7;
+    color: #c5c5c5;
   }
 </style>
 </head>
